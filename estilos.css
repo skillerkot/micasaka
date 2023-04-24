@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+}
+
+.titulo{
+    color: rgb(119, 31, 106);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+header{
+    width: 100%;
+    height: 400px;
+    background: #3E5151;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #decba4a2, #3e5151a9),url(./img/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #decba4a2, hsla(180, 13%, 28%, 0.616)),url(./img/portada.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position-y: -150px;
+
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+.texto-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.texto-header h1{
+    font-size: 70px;
+    color: #fff;
+    text-decoration-line: overline;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.texto-header h2{
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    background-color: #f2f2f2;
+}
+.imagen-about-us {
+    width: 48%;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5)
+}
+.contenido-textos{
+    padding: 40px;
+}
+.contenido-textos h3{
+    
+    margin-bottom: 15px;
+
+}
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50% ;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 20px 0px 30px 15px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.portafolio{
+    background: #f2f2f2;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5)
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background-color: #4d0686;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+
+}
+.hover-galeria {
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+
+}
+.cards .card img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin: 20px;
+    border: 3px solid #fff;
+    border-radius: 40%;
+    display: block;;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding: 10px;
+}
+
+.about-services{
+    background: #ccc;
+    padding-bottom:30px ;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 90%;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+.descripcion-pagina{
+    margin: 20px;
+}
+.contenido-nosotros{
+    justify-content: center;
+}
+#izq{
+    width: 300px;
+    height: auto; overflow: hidden;
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+
+}
+.texto-contacto{
+    text-align: left;
+}
+.email{
+    color: black;
+    text-decoration: none;
+}
+.email :hover{
+    text-decoration: underline;
+}
+#der{
+    width: 490px;
+    border: 1px solid;
+    height: auto; overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+}
+input[type="text"], input[type="email"]{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.nombre-mensaje{
+    width: 95%;
+    height: 40px;
+}
+.mapa{
+    width: 800px;
+    height: auto;
+    padding: 10px ;
+}
+
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+
+}
+.contenedor-foo{
+    text-align: center;
+
+}
+.contenedor-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+.contenedor-foo p{
+    color: #ccc;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+.item{
+    height: 300px;
+    width: 100%;
+    background-color: #ccc;
+    border: 10px solid #ccc;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+}
+.item h3{
+text-align: center;
+padding: 10px;
+}
+.item p{
+    text-align: center;
+    padding: 20px;
+}
+.item1{
+    background: url(img/servicio1.jpg);
+
+}
+.item3{
+    background: url(img/servicio2.jpg);
+
+}
+.item5{
+    background: url(img/servicio3.jpg);
+
+}
+@media only screen {
+    
+}
