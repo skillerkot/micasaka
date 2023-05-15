@@ -20,8 +20,23 @@ body{
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px #ccc;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-direction: reverse;
+    animation-iteration-count: 2;
+    animation-name: mover;
+    animation-iteration-count: 1;
+}
+
+@keyframes mover {
+    0%{transform: translate(0);
+    }
+    100%{transform: translate(100%);}
     
 }
+
 
 header{
     width: 100%;
@@ -165,6 +180,10 @@ nav > a:hover{
 .imagen-port:hover .hover-galeria{
     transform: scale(1);
 }
+.hover-galeria
+    p{
+        text-align: center;
+    }
 
 .cards{
     display: flex;
