@@ -271,6 +271,8 @@ nav > a:hover {
   border: 1px solid;
   margin: 20px;
   padding: 20px;
+  justify-content: space-evenly
+  
 }
 
 .texto-contacto {
@@ -293,6 +295,7 @@ nav > a:hover {
   overflow: hidden;
   margin: 20px;
   padding: 20px;
+  justify-content: space-evenly
 }
 
 input[type=text], input[type=email] {
@@ -311,6 +314,7 @@ input[type=text], input[type=email] {
   width: 800px;
   height: auto;
   padding: 10px;
+  justify-content: space-evenly
 }
 
 footer {
